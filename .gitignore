@@ -1,0 +1,55 @@
+# Ignore appsettings.json to prevent leaking secrets (including OpenAI API key)
+appsettings.json
+appsettings.Development.json
+
+# Ignore Visual Studio specific files
+.vs/
+*.suo
+*.user
+*.sln.docstates
+*.cache
+
+# Ignore build output
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.pdb
+*.log
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore database files (if using local SQLite)
+*.mdf
+*.ldf
+*.sqlite
+*.sqlite3
+
+# Ignore environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Ignore dependency manager files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore compiled TypeScript files
+dist/
+build/
+
+# Ignore IDE specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Ignore JetBrains Rider files
+*.dotCover
+*.sln.DotSettings
