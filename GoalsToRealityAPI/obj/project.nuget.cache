@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+Pq8UUP33wY=",
+  "dgSpecHash": "pMZUXwEVHes=",
   "success": true,
-  "projectFilePath": "C:\\Users\\keith\\source\\repos\\GoalsToRealityAPI\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj",
+  "projectFilePath": "C:\\Users\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\keith\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\keith\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

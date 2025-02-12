@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\keith\\source\\repos\\GoalsToRealityAPI\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj": {}
+    "C:\\Users\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\keith\\source\\repos\\GoalsToRealityAPI\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj": {
+    "C:\\Users\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\keith\\source\\repos\\GoalsToRealityAPI\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj",
         "projectName": "GoalsToRealityAPI",
-        "projectPath": "C:\\Users\\keith\\source\\repos\\GoalsToRealityAPI\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj",
+        "projectPath": "C:\\Users\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj",
         "packagesPath": "C:\\Users\\keith\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\keith\\source\\repos\\GoalsToRealityAPI\\GoalsToRealityAPI\\obj\\",
+        "outputPath": "C:\\Users\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
