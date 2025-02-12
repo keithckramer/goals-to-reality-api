@@ -32,6 +32,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "GoalsToRealityAPI.Controllers.GoalsController",
+    "Method": "GenerateQuestions",
+    "RelativePath": "api/goals/generate-questions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "goalTitle",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GoalsToRealityAPI.Controllers.StatesController",
     "Method": "GetStates",
     "RelativePath": "api/States",

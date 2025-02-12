@@ -143,3 +143,5 @@ C:\Users\Code\goalstoreality\API\goals-to-reality-api\GoalsToRealityAPI\obj\Debu
 C:\Users\Code\goalstoreality\API\goals-to-reality-api\GoalsToRealityAPI\obj\Debug\net8.0\GoalsToRealityAPI.pdb
 C:\Users\Code\goalstoreality\API\goals-to-reality-api\GoalsToRealityAPI\obj\Debug\net8.0\GoalsToRealityAPI.genruntimeconfig.cache
 C:\Users\Code\goalstoreality\API\goals-to-reality-api\GoalsToRealityAPI\obj\Debug\net8.0\ref\GoalsToRealityAPI.dll
+C:\Users\Code\goalstoreality\API\goals-to-reality-api\GoalsToRealityAPI\bin\Debug\net8.0\OpenAI.dll
+C:\Users\Code\goalstoreality\API\goals-to-reality-api\GoalsToRealityAPI\bin\Debug\net8.0\System.ClientModel.dll
