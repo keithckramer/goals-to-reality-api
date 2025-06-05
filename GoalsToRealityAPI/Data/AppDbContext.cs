@@ -9,10 +9,7 @@ namespace GoalsToRealityAPI.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        // DbSet for User table with additional fields
         public DbSet<User> Users { get; set; }
-
-        // Other tables in the database
         public DbSet<Goal> Goals { get; set; }
         public DbSet<SubGoal> SubGoals { get; set; }
         public DbSet<GoalsToRealityAPI.Models.Task> Tasks { get; set; }
@@ -24,21 +21,87 @@ namespace GoalsToRealityAPI.Data
         public DbSet<Progress> Progress { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<State> States { get; set; }
+        public DbSet<OnboardingAnswer> OnboardingAnswers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configure the relationship between User and State
+            // User → State
             modelBuilder.Entity<User>()
-                .HasOne(u => u.State) // Each User has one State
-                .WithMany() // State does not need a Users collection
-                .HasForeignKey(u => u.StateID) // Foreign Key in User
-                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete
+                .HasOne(u => u.State)
+                .WithMany()
+                .HasForeignKey(u => u.StateID)
+                .OnDelete(DeleteBehavior.Restrict);
 
-            // Additional configurations if needed
+            // Answer → User
+            modelBuilder.Entity<Answer>()
+                .HasOne(a => a.User)
+                .WithMany()
+                .HasForeignKey(a => a.UserID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Answer → Question
+            modelBuilder.Entity<Answer>()
+                .HasOne(a => a.Question)
+                .WithMany()
+                .HasForeignKey(a => a.QuestionID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Progress → User
+            modelBuilder.Entity<Progress>()
+                .HasOne(p => p.User)
+                .WithMany()
+                .HasForeignKey(p => p.UserID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Progress → Goal
+            modelBuilder.Entity<Progress>()
+                .HasOne(p => p.Goal)
+                .WithMany()
+                .HasForeignKey(p => p.GoalID)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Progress → SubGoal
+            modelBuilder.Entity<Progress>()
+                .HasOne(p => p.SubGoal)
+                .WithMany()
+                .HasForeignKey(p => p.SubGoalID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Progress → Task
+            modelBuilder.Entity<Progress>()
+                .HasOne(p => p.Task)
+                .WithMany()
+                .HasForeignKey(p => p.TaskID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Progress → SubTask
+            modelBuilder.Entity<Progress>()
+                .HasOne(p => p.SubTask)
+                .WithMany()
+                .HasForeignKey(p => p.SubTaskID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Decimal precision to prevent EF warnings
+            modelBuilder.Entity<Goal>()
+                .Property(g => g.Weight)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<SubGoal>()
+                .Property(sg => sg.Weight)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<GoalsToRealityAPI.Models.Task>()
+                .Property(t => t.Weight)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<Progress>()
+                .Property(p => p.ProgressValue)
+                .HasColumnType("decimal(18,2)");
+
+            // State table name override
+            modelBuilder.Entity<State>().ToTable("States");
         }
-
     }
 }
-

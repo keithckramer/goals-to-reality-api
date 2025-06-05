@@ -32,16 +32,48 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "GoalsToRealityAPI.Controllers.GoalsController",
-    "Method": "GenerateQuestions",
-    "RelativePath": "api/goals/generate-questions",
+    "ContainingType": "GoalsController",
+    "Method": "GetNextQuestion",
+    "RelativePath": "api/goals/next-question",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "goalTitle",
-        "Type": "System.String",
+        "Name": "request",
+        "Type": "ReflectionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GoalsController",
+    "Method": "StartReflection",
+    "RelativePath": "api/goals/start-reflection",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GoalsController\u002BGoalRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GoalsToRealityAPI.Controllers.OnboardingController",
+    "Method": "SaveAnswers",
+    "RelativePath": "api/Onboarding",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "GoalsToRealityAPI.Models.OnboardingAnswer",
         "IsRequired": true
       }
     ],

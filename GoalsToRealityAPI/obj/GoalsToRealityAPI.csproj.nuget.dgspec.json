@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj": {}
+    "C:\\Code\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj": {
+    "C:\\Code\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj",
+        "projectUniqueName": "C:\\Code\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj",
         "projectName": "GoalsToRealityAPI",
-        "projectPath": "C:\\Users\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj",
+        "projectPath": "C:\\Code\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\GoalsToRealityAPI.csproj",
         "packagesPath": "C:\\Users\\keith\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\obj\\",
+        "outputPath": "C:\\Code\\Code\\goalstoreality\\API\\goals-to-reality-api\\GoalsToRealityAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -61,6 +61,12 @@
               "version": "[7.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )"
             },

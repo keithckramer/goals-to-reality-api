@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoalsToRealityAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8374a908304ad01193a3f576885b1c14f94df700")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bb2679619a63ed6696dec37992ed3b187f66102")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoalsToRealityAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoalsToRealityAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
